@@ -1,0 +1,148 @@
+/*
+    M-grid is designed to be an easy to access tool which helps the developer/Designer within Mendix with grid styling without relying on custom scss.
+    Please do not make change in this document. You may make changes in m-grid-variables.scss if you like.
+
+    Author: Maurits de Koning-Hewitt, The Orange Force
+*/
+
+/*
+This is the magic of assigning the styling to the correct level in the dom, 
+as well to calculate gap sizes for grid rows.
+
+$grid-type: Argument to determine what kind of widget it is. Specific styling will be applied depending on the grid-type.
+$grid-path: Argument to determine the correct path of the DOM for that widget to inject the styling.
+$spacing & $grid-spacings: is a loop that is used to determine the Grid Suffix, Grid Gap and Grid Item values.
+$row-type with the extension {$i} (grid--row-1) is a flexible stylings generator that goes up to 200 colums.
+
+
+*/
+
+@mixin grid-spacing($grid-type, $grid-path) {
+    @each $spacing in $grid-spacings {
+        $grid-suffix: nth($spacing, 1);
+        $grid-gap: nth($spacing, 2);
+        $grid-item: nth($spacing, 3);
+        &#{$grid-suffix} #{$grid-path} {
+            display: grid;
+            list-style: none;
+            gap: $grid-gap;
+            grid-template-columns: repeat(auto-fill, minmax($grid-item, 1fr));
+            @if $grid-type == $gallery-type {
+                grid-template-columns: repeat(auto-fill, minmax($grid-item, 1fr)) !important;
+            }
+            @if $grid-type == $row-type {
+                $columns: 24;
+                @for $i from 1 through $columns {
+                    &--row-#{$i} {
+                        $row-percentage: calc(calc(100% / #{$i}) - #{$grid-gap});
+                        grid-template-columns: repeat(auto-fill, minmax(#{$row-percentage}, 1fr)) !important;
+                    }
+                }
+            }
+        }
+        &-gap#{$grid-suffix} #{$grid-path} {
+            gap: $grid-gap;
+            @if $grid-type == $row-type {
+                $columns: 24;
+                @for $i from 1 through $columns {
+                    &--row-#{$i} {
+                        $row-percentage: calc(calc(100% / #{$i}) - #{$grid-gap});
+                        grid-template-columns: repeat(auto-fill, minmax(#{$row-percentage}, 1fr));
+                    }
+                }
+            }
+        }
+        &-item#{$grid-suffix} #{$grid-path} {
+            grid-template-columns: repeat(auto-fill, minmax($grid-item, 1fr));
+            @if $grid-type == $gallery-type {
+                grid-template-columns: repeat(auto-fill, minmax($grid-item, 1fr)) !important;
+            }
+            @if $grid-type == $row-type {
+                $columns: 24;
+                @for $i from 1 through $columns {
+                    &--row-#{$i} {
+                        $row-percentage: calc(calc(100% / #{$i}) - #{$grid-gap});
+                        grid-template-columns: repeat(auto-fill, minmax(#{$row-percentage}, 1fr));
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Widget styling
+
+.m-grid {
+    @include grid();
+    @include grid-spacing($row-type, "");
+}
+
+// Gallery Widget styling
+
+.widget-gallery.m-grid {
+    grid-template-columns: unset;
+    gap: unset;
+    @include grid-spacing($gallery-type, ">.widget-gallery-content >.widget-gallery-items");
+    >.widget-gallery-content  >.widget-gallery-items {
+        > .widget-gallery-item {
+            height: 100%;
+            > div {
+                height: inherit;
+            }
+            > .widget-gallery-item-button,
+            > .widget-gallery-item-button > div {
+                height: inherit;
+            }
+        }
+    }
+}
+
+// listview Widget styling
+
+.mx-listview.m-grid {
+    grid-template-columns: unset;
+    gap: unset;
+    @include grid-spacing($listview-type, ">ul");
+    > ul > li > .mx-dataview {
+            height: 100%;
+            > .mx-dataview-content{
+                height: 100%;
+                > div{
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+// Template Widget styling
+
+.mx-templategrid.m-grid {
+    grid-template-columns: unset;
+    gap: unset;
+    @include grid-spacing($templategrid-type, ">.mx-grid-content>.mx-templategrid-content-wrapper");
+    > .mx-grid-content > .mx-templategrid-content-wrapper > .mx-templategrid-row {
+        height: 100%;
+        > .mx-templategrid-item {
+            display: flex;
+            height: inherit;
+            > .mx-dataview {
+                height: 100%;
+                width: 100%;
+                > .mx-dataview-content{
+                    height: 100%;
+                    > div{
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Template layouts
+
+.m-grid--auto-grow {
+    > div > div {
+        height: 100%;
+    }
+}

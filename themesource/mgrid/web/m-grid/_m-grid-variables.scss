@@ -1,0 +1,55 @@
+/*
+    M-grid-variables is part of m-grid. You may make changes here if you like.
+
+    Author: Maurits de Koning-Hewitt, The Orange Force
+*/
+
+// This is for all the widget variations
+
+$gallery-type: "gallery";
+$listview-type: "listview";
+$templategrid-type: "templategrid";
+$row-type: "row";
+$layout-type: "layout";
+
+$app-prefix: "m-";
+$grid-path: "";
+$grid-type: "";
+
+// Variables
+
+$grid-gap--none: 0px;
+$grid-gap--smallest: $spacing-smallest;
+$grid-gap--smaller: $spacing-smaller;
+$grid-gap--small: $spacing-small;
+$grid-gap--medium: $spacing-medium;
+$grid-gap--large: $spacing-large;
+$grid-gap--larger: $spacing-larger;
+$grid-gap--largest: $spacing-largest;
+
+$grid-item--none: unset;
+$grid-item--smallest: 50px;
+$grid-item--smaller: 80px;
+$grid-item--small: 120px;
+$grid-item--medium: 240px;
+$grid-item--large: 320px;
+$grid-item--larger: 420px;
+$grid-item--largest: 600px;
+$grid-item--full: 100%;
+
+// grid prefixes
+
+@mixin grid {
+    display: grid;
+    list-style: none;
+    gap: $grid-gap--medium;
+}
+
+// This is the list where m-grid.scss will loop over. You can add your own variables to this list if you want.
+
+$grid-spacings: ("", $grid-gap--medium, $grid-item--medium), (--none $grid-gap--none ""), (--smallest $grid-gap--smallest $grid-item--smallest),
+    (--smaller $grid-gap--smaller $grid-item--smaller), (--small $grid-gap--small $grid-item--small),
+    (--large $grid-gap--large $grid-item--large), (--larger $grid-gap--larger $grid-item--larger),
+    (--largest $grid-gap--largest $grid-item--largest), (--full $grid-gap--medium $grid-item--full);
+
+

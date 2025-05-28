@@ -1,0 +1,11 @@
+/*
+    M-grid is designed to be an easy to access tool which intergrates Grid without relying on custom scss.
+
+    Author: Maurits de Koning-Hewitt, The Orange Force
+*/
+
+// Import of all the requires scss files. The sequence of the import is important.
+
+@import '../../../theme/web/custom-variables';
+
+@import 'm-grid/all';

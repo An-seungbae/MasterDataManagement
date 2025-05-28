@@ -1,0 +1,557 @@
+{
+    "DivContainer": [
+        {
+            "name": "Use Grid",
+            "type": "Toggle",
+            "description": "Use grid for this widget. Please read https://css-tricks.com/snippets/css/complete-guide-grid/ for more information about the use of grid.",
+            "class": "m-grid"
+        },
+        {
+            "name": "Grid Size",
+            "type": "Dropdown",
+            "description": "Automatically scales the item and gap sizes. Medium is recommended.",
+            "options": [
+                {
+                    "name": "Smallest",
+                    "class": "m-grid--smallest"
+                },
+                {
+                    "name": "Smaller",
+                    "class": "m-grid--smaller"
+                },
+                {
+                    "name": "Small",
+                    "class": "m-grid--small"
+                },
+                {
+                    "name": "Medium",
+                    "class": "m-grid--medium"
+                },
+                {
+                    "name": "Large",
+                    "class": "m-grid--large"
+                },
+                {
+                    "name": "Larger",
+                    "class": "m-grid--larger"
+                },
+                {
+                    "name": "Largest",
+                    "class": "m-grid--largest"
+                },
+                {
+                    "name": "Full",
+                    "class": "m-grid--full"
+                }
+            ]
+        },
+        {
+            "name": "Grid Gap Size",
+            "type": "Dropdown",
+            "description": "Gap between items within a grid. Will overwite Grid size.",
+            "options": [
+                {
+                    "name": "None",
+                    "class": "m-grid-gap--none"
+                },
+                {
+                    "name": "Smallest",
+                    "class": "m-grid-gap--smallest"
+                },
+                {
+                    "name": "Smaller",
+                    "class": "m-grid-gap--smaller"
+                },
+                {
+                    "name": "Small",
+                    "class": "m-grid-gap--small"
+                },
+                {
+                    "name": "Medium",
+                    "class": "m-grid-gap--medium"
+                },
+                {
+                    "name": "Large",
+                    "class": "m-grid-gap--large"
+                },
+                {
+                    "name": "Larger",
+                    "class": "m-grid-gap--larger"
+                },
+                {
+                    "name": "Largest",
+                    "class": "m-grid-gap--largest"
+                }
+            ]
+        },
+        {
+            "name": "Grid Item Size",
+            "type": "Dropdown",
+            "description": "Item size of each grid item. Will overwite Grid size.",
+            "options": [
+                {
+                    "name": "Smallest",
+                    "class": "m-grid-item--smallest"
+                },
+                {
+                    "name": "Smaller",
+                    "class": "m-grid-item--smaller"
+                },
+                {
+                    "name": "Small",
+                    "class": "m-grid-item--small"
+                },
+                {
+                    "name": "Medium",
+                    "class": "m-grid-item--medium"
+                },
+                {
+                    "name": "Large",
+                    "class": "m-grid-item--large"
+                },
+                {
+                    "name": "Larger",
+                    "class": "m-grid-item--larger"
+                },
+                {
+                    "name": "Largest",
+                    "class": "m-grid-item--largest"
+                },
+                {
+                    "name": "Full",
+                    "class": "m-grid-item--full"
+                }
+            ]
+        },
+        {
+            "name": "Grid Fixed Row Items",
+            "type": "Dropdown",
+            "description": "Fixes the amount of items displayed in one row. This will overwrite grid size & and grid item size.",
+            "options": [
+                {
+                    "name": "1 item per row",
+                    "class": "m-grid--row-1"
+                },
+                {
+                    "name": "2 items per row",
+                    "class": "m-grid--row-2"
+                },
+                {
+                    "name": "3 items per row",
+                    "class": "m-grid--row-3"
+                },
+                {
+                    "name": "4 items per row",
+                    "class": "m-grid--row-4"
+                },
+                {
+                    "name": "5 items per row",
+                    "class": "m-grid--row-5"
+                },
+                {
+                    "name": "6 items per row",
+                    "class": "m-grid--row-6"
+                },
+                {
+                    "name": "7 item per row",
+                    "class": "m-grid--row-7"
+                },
+                {
+                    "name": "8 items per row",
+                    "class": "m-grid--row-8"
+                },
+                {
+                    "name": "9 items per row",
+                    "class": "m-grid--row-9"
+                },
+                {
+                    "name": "10 items per row",
+                    "class": "m-grid--row-10"
+                },
+                {
+                    "name": "11 items per row",
+                    "class": "m-grid--row-11"
+                },
+                {
+                    "name": "12 items per row",
+                    "class": "m-grid--row-12"
+                }
+            ]
+        }
+    ],
+    "com.mendix.widget.web.gallery.Gallery": [
+        {
+            "name": "Use Grid",
+            "type": "Toggle",
+            "description": "Use grid for this widget. Please read https://css-tricks.com/snippets/css/complete-guide-grid/ for more information about the use of grid.",
+            "class": "m-grid"
+        },
+        {
+            "name": "Grid Size",
+            "type": "Dropdown",
+            "description": "Automatically scales the item and gap sizes. Medium is recommended.",
+            "options": [
+                {
+                    "name": "Smallest",
+                    "class": "m-grid--smallest"
+                },
+                {
+                    "name": "Smaller",
+                    "class": "m-grid--smaller"
+                },
+                {
+                    "name": "Small",
+                    "class": "m-grid--small"
+                },
+                {
+                    "name": "Medium",
+                    "class": "m-grid--medium"
+                },
+                {
+                    "name": "Large",
+                    "class": "m-grid--large"
+                },
+                {
+                    "name": "Larger",
+                    "class": "m-grid--larger"
+                },
+                {
+                    "name": "Largest",
+                    "class": "m-grid--largest"
+                },
+                {
+                    "name": "Full",
+                    "class": "m-grid--full"
+                }
+            ]
+        },
+        {
+            "name": "Grid Gap Size",
+            "type": "Dropdown",
+            "description": "Gap between items within a grid. Will overwite Grid size.",
+            "options": [
+                {
+                    "name": "None",
+                    "class": "m-grid-gap--none"
+                },
+                {
+                    "name": "Smallest",
+                    "class": "m-grid-gap--smallest"
+                },
+                {
+                    "name": "Smaller",
+                    "class": "m-grid-gap--smaller"
+                },
+                {
+                    "name": "Small",
+                    "class": "m-grid-gap--small"
+                },
+                {
+                    "name": "Medium",
+                    "class": "m-grid-gap--medium"
+                },
+                {
+                    "name": "Large",
+                    "class": "m-grid-gap--large"
+                },
+                {
+                    "name": "Larger",
+                    "class": "m-grid-gap--larger"
+                },
+                {
+                    "name": "Largest",
+                    "class": "m-grid-gap--largest"
+                }
+            ]
+        },
+        {
+            "name": "Grid Item Size",
+            "type": "Dropdown",
+            "description": "Item size of each grid item. Will overwite Grid size.",
+            "options": [
+                {
+                    "name": "Smallest",
+                    "class": "m-grid-item--smallest"
+                },
+                {
+                    "name": "Smaller",
+                    "class": "m-grid-item--smaller"
+                },
+                {
+                    "name": "Small",
+                    "class": "m-grid-item--small"
+                },
+                {
+                    "name": "Medium",
+                    "class": "m-grid-item--medium"
+                },
+                {
+                    "name": "Large",
+                    "class": "m-grid-item--large"
+                },
+                {
+                    "name": "Larger",
+                    "class": "m-grid-item--larger"
+                },
+                {
+                    "name": "Largest",
+                    "class": "m-grid-item--largest"
+                },
+                {
+                    "name": "Full",
+                    "class": "m-grid-item--full"
+                }
+            ]
+        }
+    ],
+    "ListView": [
+        {
+            "name": "Use Grid",
+            "type": "Toggle",
+            "description": "Use grid for this widget. Please read https://css-tricks.com/snippets/css/complete-guide-grid/ for more information about the use of grid.",
+            "class": "m-grid"
+        },
+        {
+            "name": "Grid Size",
+            "type": "Dropdown",
+            "description": "Automatically scales the item and gap sizes. Medium is recommended.",
+            "options": [
+                {
+                    "name": "Smallest",
+                    "class": "m-grid--smallest"
+                },
+                {
+                    "name": "Smaller",
+                    "class": "m-grid--smaller"
+                },
+                {
+                    "name": "Small",
+                    "class": "m-grid--small"
+                },
+                {
+                    "name": "Medium",
+                    "class": "m-grid--medium"
+                },
+                {
+                    "name": "Large",
+                    "class": "m-grid--large"
+                },
+                {
+                    "name": "Larger",
+                    "class": "m-grid--larger"
+                },
+                {
+                    "name": "Largest",
+                    "class": "m-grid--largest"
+                },
+                {
+                    "name": "Full",
+                    "class": "m-grid--full"
+                }
+            ]
+        },
+        {
+            "name": "Grid Gap Size",
+            "type": "Dropdown",
+            "description": "Gap between items within a grid. Will overwite Grid size.",
+            "options": [
+                {
+                    "name": "None",
+                    "class": "m-grid-gap--none"
+                },
+                {
+                    "name": "Smallest",
+                    "class": "m-grid-gap--smallest"
+                },
+                {
+                    "name": "Smaller",
+                    "class": "m-grid-gap--smaller"
+                },
+                {
+                    "name": "Small",
+                    "class": "m-grid-gap--small"
+                },
+                {
+                    "name": "Medium",
+                    "class": "m-grid-gap--medium"
+                },
+                {
+                    "name": "Large",
+                    "class": "m-grid-gap--large"
+                },
+                {
+                    "name": "Larger",
+                    "class": "m-grid-gap--larger"
+                },
+                {
+                    "name": "Largest",
+                    "class": "m-grid-gap--largest"
+                }
+            ]
+        },
+        {
+            "name": "Grid Item Size",
+            "type": "Dropdown",
+            "description": "Item size of each grid item. Will overwite Grid size.",
+            "options": [
+                {
+                    "name": "Smallest",
+                    "class": "m-grid-item--smallest"
+                },
+                {
+                    "name": "Smaller",
+                    "class": "m-grid-item--smaller"
+                },
+                {
+                    "name": "Small",
+                    "class": "m-grid-item--small"
+                },
+                {
+                    "name": "Medium",
+                    "class": "m-grid-item--medium"
+                },
+                {
+                    "name": "Large",
+                    "class": "m-grid-item--large"
+                },
+                {
+                    "name": "Larger",
+                    "class": "m-grid-item--larger"
+                },
+                {
+                    "name": "Largest",
+                    "class": "m-grid-item--largest"
+                },
+                {
+                    "name": "Full",
+                    "class": "m-grid-item--full"
+                }
+            ]
+        }
+    ],
+    "TemplateGrid": [
+        {
+            "name": "Use Grid",
+            "type": "Toggle",
+            "description": "Use grid for this widget. Please read https://css-tricks.com/snippets/css/complete-guide-grid/ for more information about the use of grid.",
+            "class": "m-grid"
+        },
+        {
+            "name": "Grid Size",
+            "type": "Dropdown",
+            "description": "Automatically scales the item and gap sizes. Medium is recommended.",
+            "options": [
+                {
+                    "name": "Smallest",
+                    "class": "m-grid--smallest"
+                },
+                {
+                    "name": "Smaller",
+                    "class": "m-grid--smaller"
+                },
+                {
+                    "name": "Small",
+                    "class": "m-grid--small"
+                },
+                {
+                    "name": "Medium",
+                    "class": "m-grid--medium"
+                },
+                {
+                    "name": "Large",
+                    "class": "m-grid--large"
+                },
+                {
+                    "name": "Larger",
+                    "class": "m-grid--larger"
+                },
+                {
+                    "name": "Largest",
+                    "class": "m-grid--largest"
+                },
+                {
+                    "name": "Full",
+                    "class": "m-grid--full"
+                }
+            ]
+        },
+        {
+            "name": "Grid Gap Size",
+            "type": "Dropdown",
+            "description": "Gap between items within a grid. Will overwite Grid size.",
+            "options": [
+                {
+                    "name": "None",
+                    "class": "m-grid-gap--none"
+                },
+                {
+                    "name": "Smallest",
+                    "class": "m-grid-gap--smallest"
+                },
+                {
+                    "name": "Smaller",
+                    "class": "m-grid-gap--smaller"
+                },
+                {
+                    "name": "Small",
+                    "class": "m-grid-gap--small"
+                },
+                {
+                    "name": "Medium",
+                    "class": "m-grid-gap--medium"
+                },
+                {
+                    "name": "Large",
+                    "class": "m-grid-gap--large"
+                },
+                {
+                    "name": "Larger",
+                    "class": "m-grid-gap--larger"
+                },
+                {
+                    "name": "Largest",
+                    "class": "m-grid-gap--largest"
+                }
+            ]
+        },
+        {
+            "name": "Grid Item Size",
+            "type": "Dropdown",
+            "description": "Item size of each grid item. Will overwite Grid size.",
+            "options": [
+                {
+                    "name": "Smallest",
+                    "class": "m-grid-item--smallest"
+                },
+                {
+                    "name": "Smaller",
+                    "class": "m-grid-item--smaller"
+                },
+                {
+                    "name": "Small",
+                    "class": "m-grid-item--small"
+                },
+                {
+                    "name": "Medium",
+                    "class": "m-grid-item--medium"
+                },
+                {
+                    "name": "Large",
+                    "class": "m-grid-item--large"
+                },
+                {
+                    "name": "Larger",
+                    "class": "m-grid-item--larger"
+                },
+                {
+                    "name": "Largest",
+                    "class": "m-grid-item--largest"
+                },
+                {
+                    "name": "Full",
+                    "class": "m-grid-item--full"
+                }
+            ]
+        }
+    ]
+}
