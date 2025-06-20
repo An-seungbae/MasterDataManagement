@@ -17,8 +17,9 @@ import com.mendix.webui.CustomJavaAction;
 import usercommons.proxies.CustomEntity;
 import com.mendix.systemwideinterfaces.core.IMendixObject;
 import com.mendix.systemwideinterfaces.core.meta.IMetaObject;
+import com.mendix.systemwideinterfaces.core.UserAction;
 
-public class GetCustomEntityNames extends CustomJavaAction<java.util.List<IMendixObject>>
+public class GetCustomEntityNames extends UserAction<java.util.List<IMendixObject>>
 {
 	public GetCustomEntityNames(IContext context)
 	{

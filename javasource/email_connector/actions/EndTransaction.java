@@ -11,8 +11,9 @@ package email_connector.actions;
 
 import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.webui.CustomJavaAction;
+import com.mendix.systemwideinterfaces.core.UserAction;
 
-public class EndTransaction extends CustomJavaAction<java.lang.Void>
+public class EndTransaction extends UserAction<java.lang.Void>
 {
 	public EndTransaction(IContext context)
 	{

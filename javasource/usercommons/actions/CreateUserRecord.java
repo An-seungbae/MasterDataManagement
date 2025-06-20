@@ -31,8 +31,9 @@ import com.mendix.systemwideinterfaces.core.meta.IMetaObject;
 import com.mendix.systemwideinterfaces.core.meta.IMetaPrimitive;
 import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.systemwideinterfaces.core.IMendixObject;
+import com.mendix.systemwideinterfaces.core.UserAction;
 
-public class CreateUserRecord extends CustomJavaAction<IMendixObject>
+public class CreateUserRecord extends UserAction<IMendixObject>
 {
 	/** @deprecated use UserProvisioning.getMendixObject() instead. */
 	@java.lang.Deprecated(forRemoval = true)

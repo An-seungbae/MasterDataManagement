@@ -21,8 +21,9 @@ import email_connector.proxies.Folder;
 import encryption.proxies.microflows.Microflows;
 import java.util.ArrayList;
 import static email_connector.implementation.Commons.getProtocol;
+import com.mendix.systemwideinterfaces.core.UserAction;
 
-public class GetFolderNames extends CustomJavaAction<java.util.List<IMendixObject>>
+public class GetFolderNames extends UserAction<java.util.List<IMendixObject>>
 {
 	/** @deprecated use MxEmailAccount.getMendixObject() instead. */
 	@java.lang.Deprecated(forRemoval = true)

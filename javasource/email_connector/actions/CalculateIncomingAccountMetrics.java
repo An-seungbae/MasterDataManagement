@@ -20,8 +20,9 @@ import email_connector.proxies.constants.Constants;
 import java.util.Map;
 import java.util.stream.Collectors;
 import static java.util.stream.Collectors.counting;
+import com.mendix.systemwideinterfaces.core.UserAction;
 
-public class CalculateIncomingAccountMetrics extends CustomJavaAction<java.lang.Void>
+public class CalculateIncomingAccountMetrics extends UserAction<java.lang.Void>
 {
 	/** @deprecated use com.mendix.utils.ListUtils.map(EmailAccountList, com.mendix.systemwideinterfaces.core.IEntityProxy::getMendixObject) instead. */
 	@java.lang.Deprecated(forRemoval = true)

@@ -16,8 +16,9 @@ import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.systemwideinterfaces.core.IMendixObject;
 import com.mendix.webui.CustomJavaAction;
 import email_connector.implementation.MxMailMapper;
+import com.mendix.systemwideinterfaces.core.UserAction;
 
-public class GetAutoConfig extends CustomJavaAction<IMendixObject>
+public class GetAutoConfig extends UserAction<IMendixObject>
 {
 	private final java.lang.String EmailID;
 

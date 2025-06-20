@@ -22,8 +22,9 @@ import encryption.proxies.microflows.Microflows;
 import mxmodelreflection.TokenReplacer;
 import java.util.List;
 import java.util.Map;
+import com.mendix.systemwideinterfaces.core.UserAction;
 
-public class SendEmailWithTemplate extends CustomJavaAction<java.lang.Void>
+public class SendEmailWithTemplate extends UserAction<java.lang.Void>
 {
 	private final IMendixObject DataObject;
 	/** @deprecated use EmailAccount.getMendixObject() instead. */

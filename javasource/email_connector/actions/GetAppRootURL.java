@@ -12,8 +12,9 @@ package email_connector.actions;
 import com.mendix.core.Core;
 import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.webui.CustomJavaAction;
+import com.mendix.systemwideinterfaces.core.UserAction;
 
-public class GetAppRootURL extends CustomJavaAction<java.lang.String>
+public class GetAppRootURL extends UserAction<java.lang.String>
 {
 	public GetAppRootURL(IContext context)
 	{

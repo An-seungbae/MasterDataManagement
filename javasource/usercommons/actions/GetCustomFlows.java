@@ -17,8 +17,9 @@ import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.webui.CustomJavaAction;
 import usercommons.proxies.CustomFlow;
 import com.mendix.systemwideinterfaces.core.IMendixObject;
+import com.mendix.systemwideinterfaces.core.UserAction;
 
-public class GetCustomFlows extends CustomJavaAction<java.util.List<IMendixObject>>
+public class GetCustomFlows extends UserAction<java.util.List<IMendixObject>>
 {
 	private final java.lang.String Prefix;
 

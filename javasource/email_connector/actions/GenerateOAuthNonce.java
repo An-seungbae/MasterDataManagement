@@ -12,8 +12,9 @@ package email_connector.actions;
 import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.webui.CustomJavaAction;
 import java.util.UUID;
+import com.mendix.systemwideinterfaces.core.UserAction;
 
-public class GenerateOAuthNonce extends CustomJavaAction<java.lang.String>
+public class GenerateOAuthNonce extends UserAction<java.lang.String>
 {
 	public GenerateOAuthNonce(IContext context)
 	{

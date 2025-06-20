@@ -19,8 +19,9 @@ import com.mendix.webui.CustomJavaAction;
 import email_connector.proxies.LDAPBaseDN;
 import encryption.proxies.microflows.Microflows;
 import java.util.ArrayList;
+import com.mendix.systemwideinterfaces.core.UserAction;
 
-public class GetBaseDNList extends CustomJavaAction<java.util.List<IMendixObject>>
+public class GetBaseDNList extends UserAction<java.util.List<IMendixObject>>
 {
 	/** @deprecated use LDAPConfiguration.getMendixObject() instead. */
 	@java.lang.Deprecated(forRemoval = true)

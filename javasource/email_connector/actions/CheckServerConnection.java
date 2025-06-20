@@ -25,8 +25,9 @@ import email_connector.proxies.OutgoingEmailConfiguration;
 import email_connector.proxies.constants.Constants;
 import encryption.proxies.microflows.Microflows;
 import static email_connector.implementation.Commons.getProtocol;
+import com.mendix.systemwideinterfaces.core.UserAction;
 
-public class CheckServerConnection extends CustomJavaAction<java.lang.Void>
+public class CheckServerConnection extends UserAction<java.lang.Void>
 {
 	/** @deprecated use EmailAccount.getMendixObject() instead. */
 	@java.lang.Deprecated(forRemoval = true)

@@ -24,8 +24,9 @@ import mxmodelreflection.proxies.Token;
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
+import com.mendix.systemwideinterfaces.core.UserAction;
 
-public class DeleteDuplicateMxReflectionObject extends CustomJavaAction<java.lang.Void>
+public class DeleteDuplicateMxReflectionObject extends UserAction<java.lang.Void>
 {
 	/** @deprecated use com.mendix.utils.ListUtils.map(TokenList, com.mendix.systemwideinterfaces.core.IEntityProxy::getMendixObject) instead. */
 	@java.lang.Deprecated(forRemoval = true)

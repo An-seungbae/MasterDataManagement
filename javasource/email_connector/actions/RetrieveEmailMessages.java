@@ -21,8 +21,9 @@ import email_connector.implementation.EmailListener;
 import email_connector.implementation.MxMailMapper;
 import encryption.proxies.microflows.Microflows;
 import static email_connector.implementation.Commons.getProtocol;
+import com.mendix.systemwideinterfaces.core.UserAction;
 
-public class RetrieveEmailMessages extends CustomJavaAction<java.lang.Void>
+public class RetrieveEmailMessages extends UserAction<java.lang.Void>
 {
 	/** @deprecated use emailAccount.getMendixObject() instead. */
 	@java.lang.Deprecated(forRemoval = true)

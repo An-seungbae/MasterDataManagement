@@ -25,8 +25,9 @@ import email_connector.proxies.LDAPConfiguration;
 import email_connector.proxies.Pk12Certificate;
 import encryption.proxies.microflows.Microflows;
 import java.util.List;
+import com.mendix.systemwideinterfaces.core.UserAction;
 
-public class SendEmail extends CustomJavaAction<java.lang.Boolean>
+public class SendEmail extends UserAction<java.lang.Boolean>
 {
 	/** @deprecated use EmailAccount.getMendixObject() instead. */
 	@java.lang.Deprecated(forRemoval = true)

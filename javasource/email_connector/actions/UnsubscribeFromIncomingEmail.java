@@ -19,8 +19,9 @@ import com.mendix.webui.CustomJavaAction;
 import email_connector.implementation.MxMailMapper;
 import encryption.proxies.microflows.Microflows;
 import static email_connector.implementation.Commons.getProtocol;
+import com.mendix.systemwideinterfaces.core.UserAction;
 
-public class UnsubscribeFromIncomingEmail extends CustomJavaAction<java.lang.Void>
+public class UnsubscribeFromIncomingEmail extends UserAction<java.lang.Void>
 {
 	/** @deprecated use account.getMendixObject() instead. */
 	@java.lang.Deprecated(forRemoval = true)

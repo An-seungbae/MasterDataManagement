@@ -17,11 +17,12 @@ import javax.swing.text.html.HTMLEditorKit;
 import javax.swing.text.html.parser.ParserDelegator;
 import java.io.IOException;
 import java.io.StringReader;
+import com.mendix.systemwideinterfaces.core.UserAction;
 
 /**
  * Provide a html string as input, the action will strip off all html elements and returns a plain text to 
  */
-public class ConvertHTMLBodyToPlainText extends CustomJavaAction<java.lang.String>
+public class ConvertHTMLBodyToPlainText extends UserAction<java.lang.String>
 {
 	private final java.lang.String HTMLBody;
 

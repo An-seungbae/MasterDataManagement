@@ -21,8 +21,9 @@ import email_connector.implementation.MxMailMapper;
 import mxmodelreflection.TokenReplacer;
 import java.util.List;
 import java.util.Map;
+import com.mendix.systemwideinterfaces.core.UserAction;
 
-public class CreateEmailFromTemplate extends CustomJavaAction<IMendixObject>
+public class CreateEmailFromTemplate extends UserAction<IMendixObject>
 {
 	private final IMendixObject DataObject;
 	/** @deprecated use EmailTemplate.getMendixObject() instead. */

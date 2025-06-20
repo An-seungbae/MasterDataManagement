@@ -20,8 +20,9 @@ import email_connector.implementation.MxMailMapper;
 import email_connector.implementation.NotificationListener;
 import encryption.proxies.microflows.Microflows;
 import static email_connector.implementation.Commons.getProtocol;
+import com.mendix.systemwideinterfaces.core.UserAction;
 
-public class SubscribeToIncomingEmail extends CustomJavaAction<java.lang.Void>
+public class SubscribeToIncomingEmail extends UserAction<java.lang.Void>
 {
 	/** @deprecated use account.getMendixObject() instead. */
 	@java.lang.Deprecated(forRemoval = true)

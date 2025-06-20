@@ -19,8 +19,9 @@ import usercommons.proxies.CustomEntityMember;
 import com.mendix.systemwideinterfaces.core.IMendixObject;
 import com.mendix.systemwideinterfaces.core.meta.IMetaObject;
 import com.mendix.systemwideinterfaces.core.meta.IMetaPrimitive;
+import com.mendix.systemwideinterfaces.core.UserAction;
 
-public class GetCustomEntityStringMemberNames extends CustomJavaAction<java.util.List<IMendixObject>>
+public class GetCustomEntityStringMemberNames extends UserAction<java.util.List<IMendixObject>>
 {
 	private final java.lang.String EntityName;
 

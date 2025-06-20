@@ -14,8 +14,9 @@ import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.systemwideinterfaces.core.IMendixObject;
 import com.mendix.webui.CustomJavaAction;
 import java.io.InputStream;
+import com.mendix.systemwideinterfaces.core.UserAction;
 
-public class CopyAttachmentContent extends CustomJavaAction<java.lang.Boolean>
+public class CopyAttachmentContent extends UserAction<java.lang.Boolean>
 {
 	/** @deprecated use CopyFrom.getMendixObject() instead. */
 	@java.lang.Deprecated(forRemoval = true)
